@@ -73,3 +73,19 @@ cadastro = [x for x in [nomes, notas, medias, situacao]]
 print(cadastro)
 
 #Dict comprehension
+
+lista_completa = [[('João', 'J720'), ('Maria', 'M205'), ('José', 'J371'), ('Cláudia', 'C546'), ('Ana', 'A347')], [[8.0, 9.0, 10.0], [9.0, 7.0, 6.0], [3.4, 7.0, 7.0], [5.5, 6.6, 8.0], [6.0, 10.0, 9.5]], [9.0, 7.3, 5.8, 6.7, 8.5], ['Aprovado(a)', 'Aprovado(a)', 'Reprovado(a)', 'Aprovado(a)', 'Aprovado(a)']]
+
+coluna = [ "Notas", "Média Final", "Situação"]
+cadastro_dict = {coluna[i]: lista_completa[1+i] for i in range(len(coluna))}
+print(cadastro_dict)
+#Saída:
+
+#{'Notas': [[8.0, 9.0, 10.0], [9.0, 7.0, 6.0], [3.4, 7.0, 7.0], [5.5, 6.6, 8.0], [6.0, 10.0, 9.5]], 'Média Final': [9.0, 7.3, 5.8, 6.7, 8.5], 'Situação': ['Aprovado(a)', 'Aprovado(a)', 'Reprovado(a)', 'Aprovado(a)', 'Aprovado(a)']}
+
+cadastro_dict["Estudantes"] = [lista_completa[0][i][0] for i in range(len(lista_completa[0]))]
+print(cadastro)
+
+#saída:
+#[[('João', 'J720'), ('Maria', 'M205'), ('José', 'J371'), ('Cláudia', 'C546'), ('Ana', 'A347')]
+#[[8.0, 9.0, 10.0], [9.0, 7.0, 6.0], [3.4, 7.0, 7.0], [5.5, 6.6, 8.0], [6.0, 10.0, 9.5]], [9.0, 7.3, 5.8, 6.7, 8.5], ['Aprovado(a)', 'Aprovado(a)', 'Reprovado(a)', 'Aprovado(a)', 'Aprovado(a)']]
