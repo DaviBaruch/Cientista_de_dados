@@ -6,4 +6,4 @@ def media(nota1, nota2, nota3):
 print(f"{media(7, 6, 9):.1f}")
 
 
-    
+

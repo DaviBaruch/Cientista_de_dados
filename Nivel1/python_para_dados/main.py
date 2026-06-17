@@ -28,4 +28,31 @@ print(codigo_estudantes)
 #Formato padrão
 # [expressão for item in lista]
 
-#teste
+nomes = ["João", "Maria", "José", "Pedro", "Clara", "Ana", "Lucas"]
+
+medias = [7.5, 8.0, 9.0, 7.0, 8.5, 9.5, 8.0]
+
+estudantes = list(zip(nomes, medias))
+print(estudantes)
+
+candidatos = [estudante[0] for estudante in estudantes if estudante[1] >= 8.0]
+
+#A zip() é uma função embutida do Python que recebe um ou mais iteráveis (lista, string, dict, etc.) e retorna-os como um iterador de tuplas onde cada elemento dos iteráveis são pareados. Ela é útil para fazer iterações simultâneas em várias listas.
+
+id = [1, 2, 3, 4, 5]
+regiao = ["Norte", "Nordeste", "Sudeste", "Centro-Oeste", "Sul"]
+
+mapa = list(zip(id, regiao))
+print(mapa)
+
+
+#Para uma pessoa cientista de dados, essa função pode auxiliar a parear 2 listas distintas em um único objeto zip, podendo este ser transformado em uma lista de tuplas (formato ideal para gerar um índice de mais de um nível que será explorado em alguns dos cursos da formação) ou em um dicionário passando o objeto zip para a função dict().
+
+#Agora, se as listas de entrada têm comprimentos diferentes, a saída contém o mesmo número de tuplas que a lista de menor comprimento e os elementos restantes dos outros iteráveis serão ignorados. Por exemplo:
+
+codigos = ["1000", "1001", "1002", "1003", "1004", "1005"]
+frutas = ["maçã", "uva", "banana", "laranja"]
+
+mercadorias = list(zip(codigos, frutas))
+print(mercadorias)
+
