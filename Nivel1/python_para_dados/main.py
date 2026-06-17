@@ -71,3 +71,5 @@ print(situacao)
 
 cadastro = [x for x in [nomes, notas, medias, situacao]]
 print(cadastro)
+
+#Dict comprehension
