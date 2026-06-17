@@ -89,3 +89,22 @@ print(cadastro)
 #saída:
 #[[('João', 'J720'), ('Maria', 'M205'), ('José', 'J371'), ('Cláudia', 'C546'), ('Ana', 'A347')]
 #[[8.0, 9.0, 10.0], [9.0, 7.0, 6.0], [3.4, 7.0, 7.0], [5.5, 6.6, 8.0], [6.0, 10.0, 9.5]], [9.0, 7.3, 5.8, 6.7, 8.5], ['Aprovado(a)', 'Aprovado(a)', 'Reprovado(a)', 'Aprovado(a)', 'Aprovado(a)']]
+
+
+#Try Expect: Key Error
+
+nota = {'João': 8.5, 'Maria': 7.0, 'José': 5.5, 'Cláudia': 6.7, 'Ana': 8.5, 'Pedro': 7.0, 'Lucas': 8.0, 'Carla': 9.0}
+
+nome = input("Digite o nome do aluno(a): ")
+
+#Simulando error de chave
+resultado = notas[nome]
+print(resultado)
+
+#Tratando o erro de chave
+try:
+    resultado = nota[nome]
+    print(resultado)
+except KeyError:
+    print("Aluno(a) não encontrado.")
+    
