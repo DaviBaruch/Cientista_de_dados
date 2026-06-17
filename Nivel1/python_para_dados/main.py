@@ -56,3 +56,18 @@ frutas = ["maçã", "uva", "banana", "laranja"]
 mercadorias = list(zip(codigos, frutas))
 print(mercadorias)
 
+#Criar uma lista da situação dos estudantes em que caso sua média seja maior ou igual a 6 receberá o valor "Aprovado" e caso contrário receberá o valor "Reprovado"
+
+nomes = [('João', 'J720'), ('Maria', 'M205'), ('José', 'J371'), ('Cláudia', 'C546'), ('Ana', 'A347')]
+notas = [[8.0, 9.0, 10.0], [9.0, 7.0, 6.0], [3.4, 7.0, 7.0], [5.5, 6.6, 8.0], [6.0, 10.0, 9.5]]
+medias = [9.0, 7.3, 5.8, 6.7, 8.5]
+
+situacao = ["Aprovado(a)" if notas >= 6.0 else "Reprovado(a)" for notas in medias]
+print(situacao)
+
+#para gerar listas de listas:
+
+#[expressão for item in lista de listas]
+
+cadastro = [x for x in [nomes, notas, medias, situacao]]
+print(cadastro)
