@@ -1,10 +1,10 @@
-# 📊 Projeto de Ciência de Dados | Alura
+# 📊 Carreira de Ciência de Dados
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Projeto+de+Ciência+de+Dados;Explorando+dados+e+gerando+insights;Python+%7C+Pandas+%7C+Machine+Learning)
 
 ---
 
-## 🚀 Sobre o Projeto
+## 🚀 Sobre a Carreira
 
 Este projeto foi desenvolvido durante o curso de **Ciência de Dados da Alura**, com o objetivo de aplicar na prática conceitos fundamentais como:
 
